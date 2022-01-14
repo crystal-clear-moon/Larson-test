@@ -1,0 +1,63 @@
+header {
+	@apply h-12 mb-4;
+}
+.add-address-btn {
+	@apply px-4 py-2 rounded-lg text-white bg-blue-500 hover:bg-blue-700;
+}
+h1 {
+	@apply text-2xl font-bold;
+}
+table {
+	@apply border mx-auto;
+	border-spacing: 0;
+	th, td {
+		@apply m-0 p-0 border-b border-r;
+		&:last-child {
+			@apply border-r-0;
+		}
+	}
+	tr:last-child td {
+		@apply border-b-0;
+	}
+}
+
+.pagination {
+	@apply flex justify-center mt-4;
+	button {
+		@apply mx-0.5 px-1 py-0.5 rounded-lg text-white bg-blue-500 hover:bg-blue-700;
+	}
+	select {
+		@apply mx-0.5 px-1 py-0.5 rounded-lg text-white bg-blue-500 hover:bg-blue-700;
+	}
+}
+.input {
+	@apply inline-block px-3 py-2 sm:text-sm;
+	@apply rounded-md border-2 border-gray-300 outline-none;
+	@apply transition-all duration-200;
+
+	&:hover {
+		@apply border-indigo-500;
+	}
+	&:focus {
+		@apply ring ring-indigo-500 ring-opacity-30 border-indigo-500;
+	}
+}
+.button {
+	@apply px-4 py-2 rounded-md text-white bg-indigo-500 hover:bg-blue-700;
+	@apply transition-colors duration-200;
+}
+.link-btn {
+	@apply text-indigo-500 transition-colors duration-200 rounded-sm px-1;
+
+	&:hover, &:focus {
+		@apply text-blue-700;
+	}
+	&:focus {
+		@apply ring ring-offset-2 ring-indigo-500 outline-none;
+	}
+}
+.modal {
+	@apply absolute overflow-auto rounded-md outline-none p-5 bg-white border border-slate-300;
+	@apply top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+	@apply max-w-xl w-full;
+}
